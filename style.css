@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Card */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    width: 350px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Button */
+button {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: #333;
+    border: none;
+    padding: 12px 22px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    color: white;
+}
+
+/* Result Box */
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.25);
+    transition: 0.3s;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

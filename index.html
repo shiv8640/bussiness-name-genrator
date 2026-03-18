@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bussiness name generator</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+        <h2>Business Name Generator</h2>
+        <button onclick="genrateName()">Generate Name</button>
+        <p id="result"></p>
+    </div>
+    <script>
+        function genrateName(){
+        const prefix =[ " Ramji "," Arunji "," shayamji "]
+
+        const middle =[" ki ", " ke "]
+
+        const suffix =[" Chole Bhature "," Chai paani free "," Sev pyaz pohe "]
+
+        const p = prefix[Math.floor(Math.random() * prefix.length)]
+        const m = middle [Math.floor(Math.random() * middle.length)]
+        const s = suffix [Math.floor(Math.random() * suffix.length)]
+       
+        document.getElementById("result").innerText = p + "" + m + "" + s
+    }
+    </script>
+</body>
+</html>
